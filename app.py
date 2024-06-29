@@ -5,6 +5,11 @@ from flask import Flask
 def create_app():
     app = Flask(__name__)
     @app.route('/')
+
+    def a():
+    print("dfsf")
+    x=10
+    a()
     def home():
         return 'Hi Devops Geeks Welcome to the class123 New Data 123456'
 
